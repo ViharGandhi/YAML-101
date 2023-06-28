@@ -1,0 +1,14 @@
+apple: "I am an apple"
+1: "this is a number"
+---
+cities:
+  - new delhi
+  - mumbai
+  - gujarat
+--- # differeting  different objects
+food:
+ - burger
+ - fries
+... #end of a document
+Team: [india, pakistan,england,australia] # dont have to worry about indentation.
+

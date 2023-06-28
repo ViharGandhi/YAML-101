@@ -1,0 +1,45 @@
+#sequence dataype
+
+parts: !!seq
+ - hair
+ - mouth 
+ - hands 
+ - legs
+
+
+cities: !!seq ["Delhi" ,  "mumbai"]
+
+#nested sequences and maps 
+
+about:
+ - name 
+   - fname
+   - lanme 
+ - age: 19
+ - role: {langauge: "javascript"}
+
+#pairs with duplicate values 
+pairsexample : !!pairs
+ - job: student
+ - job: employee
+
+#unique vlaues
+
+uniqval : !!set
+ ? vihar
+ ? kunal
+
+#dictionary
+
+food: !!omap
+ - fruits: [apple , mango,]
+
+#reusing some properties
+likings: &likes
+ fav fruits: mango
+ dislikes: grapes
+
+person:
+ name: vihar
+ <<: *likes
+
